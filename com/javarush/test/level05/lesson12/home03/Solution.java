@@ -8,6 +8,7 @@ Mouse jerryMouse = new Mouse(“Jerry”, 12 , 5), где 12 - высота в �
 
 public class Solution
 {
+    public static void main( String[] args )
     {
         Mouse jerryMouse = new Mouse( "Jerry", 12, 5 );
 
