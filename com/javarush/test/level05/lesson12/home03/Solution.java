@@ -8,20 +8,22 @@ Mouse jerryMouse = new Mouse(“Jerry”, 12 , 5), где 12 - высота в �
 
 public class Solution
 {
-    public static void main(String[] args)
     {
-        Mouse jerryMouse = new Mouse("Jerry", 12 , 5);
+        Mouse jerryMouse = new Mouse( "Jerry", 12, 5 );
 
         //напишите тут ваш код
+        Cat tomCat = new Cat( "Tom", 30, 5 );
+        Cat toodles = new Cat( "Toodles", 23, 3 );
+        Dog spike = new Dog( "Spike", 4, 15 );
     }
 
+    //добавьте тут ваши классы
     public static class Mouse
     {
         String name;
-        int height;
-        int tail;
+        int height, tail;
 
-        public Mouse(String name, int height, int tail)
+        public Mouse( String name, int height, int tail )
         {
             this.name = name;
             this.height = height;
@@ -29,6 +31,30 @@ public class Solution
         }
     }
 
-    //добавьте тут ваши классы
+    public static class Dog
+    {
+        String name;
+        int age, weight;
 
+        public Dog( String name, int age, int weight )
+        {
+            this.name = name;
+            this.age = age;
+            this.weight = weight;
+        }
+    }
+
+    public static class Cat
+    {
+        String name;
+        int height;
+        int weight;
+
+        public Cat( String name, int height, int weight )
+        {
+            this.name = name;
+            this.height = height;
+            this.weight = weight;
+        }
+    }
 }
